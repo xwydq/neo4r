@@ -1,7 +1,7 @@
 clean_query <- function(query) {
   res <- gsub("^\\/\\/.+$", "\n", query, perl = TRUE)
   res <- gsub("\n", " ", res)
-  res <- gsub("\"", "'", res)
+  # res <- gsub("\"", "'", res)
   res
 }
 
